@@ -6,7 +6,7 @@ import { remove } from './store/cartSlice';
 
 const Cart = () => {
 
-  const products = useSelector(state => state.cart);
+  const data = useSelector(state => state.cart);
 
   const dispatch = useDispatch();
 
@@ -14,16 +14,16 @@ const Cart = () => {
     dispatch(remove(id));
   }
 
-  const card = products.map(product => (
+  const card = data.map(product => (
     <div className="col-md-12" style={{ marginBottom: '20px' }}>
         <Card key={product.id} className="h-100">
             <div className="text-center">
                 <Card.Img variant="top" src={product.image} style={{ width: '100px', height: '130px' }} />
             </div>
             <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
+                <Card.Title>{product.productName}</Card.Title>
                 <Card.Text>
-                    R {product.price}
+                    R {product.productPrice}
                 </Card.Text>
             </Card.Body>
             <Card.Footer>

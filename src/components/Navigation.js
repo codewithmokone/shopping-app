@@ -8,12 +8,12 @@ const Navigation = () => {
   const cartProducts = useSelector(state => state.cart);
 
   return (
-    <div>
+    <div className="navbar">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand href="#">LoGO</Navbar.Brand>
             <Nav>
-              <Nav.Link to="/" as={Link}>Products</Nav.Link>
+              <Nav.Link to="/" as={Link}>List</Nav.Link>
             </Nav>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">

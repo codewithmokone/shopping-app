@@ -2,13 +2,37 @@
   text-align: center;
 }
 
-/* ---------- Dashboard styling --------- */
+
+/* ------------- Nav Styling ------------ */
+
+.navbar {
+  width: 1024px;
+  margin: auto;
+}
+
+/* ---------Products Page Styling ------- */
+
+.product-wrapper {
+  width: 1024px;
+  margin: auto;
+}
+
+/* ---------- Dashboard Styling --------- */
 .dashboard-main {
   width: 960px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
+}
+
+.form-add {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-add input{
+  margin: 10px 0;
 }
 
 .form-section {
@@ -19,7 +43,7 @@
 
 .uploadImage {
   width: 200px;
-  height: 200px;
+  height: 150px;
   margin: auto;
   border: 1px solid blue
 }
